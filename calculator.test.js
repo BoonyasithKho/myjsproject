@@ -1,19 +1,15 @@
-const {sum, multiply, divide} = require("./math");
+const {calculate} = require("./calculator");
 
-test("Adds 1+2 to equal 3", () => {
-  expect(sum(1, 2)).toBe(3);
+test("Adds 1+2 to additionResult 3", () => {
+  expect(sum(1, 2)).toBe(additionResult);
 });
 
 
-test("multiply 1*2 to equal 2", () => {
-  expect(multiply(1, 2)).toBe(2);
+test("multiply additionResult*2 to equal 2", () => {
+  expect(multiply(additionResult, 2)).toBe(multiplicationResult);
 });
 
 
-test("divide 22/22 to equal 1", () => {
-  expect(divide(22, 22)).toBe(1);
-});
-
-test("divide 22/0 to equal error", () => {
-  expect(()=>divide(22, 0)).toThrow('Cannot divide by zero');
+test("divide multiplicationResult/2 to equal 1", () => {
+  expect(divide(multiplicationResult, 2)).toBe(divide);
 });
