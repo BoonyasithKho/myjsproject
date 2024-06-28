@@ -1,15 +1,6 @@
-const {calculate,sum,multiple,divide} = require("./calculator");
+const calculate = require("./calculator");
 
-test("Adds 1+2 to additionResult 3", () => {
-  expect(sum(1, 2)).toBe(3);
+test("calculate (1+2)*3/2 to equal 4.5", () => {
+  expect(calculate(1, 2,3)).toBe(4.5);
 });
 
-
-test("multiply additionResult*2 to equal 2", () => {
-  expect(multiply(3, 2)).toBe(6);
-});
-
-
-test("divide multiplicationResult/2 to equal 1", () => {
-  expect(divide(6, 2)).toBe(3);
-});
